@@ -42,6 +42,8 @@ $con.= "The following are system-web-browser exploits for Nintendo 3DS, the ones
 
 $con.= "Note that systems where the system was updated with a >=v9.9 gamecard sysupdate have a dummy browser installed, unless an online sysupdate was done afterwards. See <a href=\"http://3dbrew.org/wiki/Internet_Browser\">here</a> for details.<br/><br/>\n";
 
+$con.= "The <i>only</i> required SD-card setup is that you extract the homebrew <a href=\"https://smealum.github.io/3ds/\">starter-kit</a> on SD.<br/><br/>\n";
+
 $con.= "Before using any of the Old3DS browser exploits, you should do the following:<br/><ol>\n";
 $con.= "<li>Use the browser 'Initialize savedata' option.</li>\n";
 $con.= "<li>Enter the browser again so that savedata can be setup. Then goto directly to the exploit page, you can return to Home Menu for scanning the above QR-code for this if you prefer.</li>\n";
@@ -62,14 +64,14 @@ $con.= "<tr>
   <th>Exploit</th>
   <th>Supported system-versions</th>
   <th>Fixed with system-version</th>
-  <th>Notes</th>
+  <th>Returned by 3dsbrowserhax_auto.php</th>
 </tr>\n";
 
-$con.= "<tr><td>Old3DS</td><td><a href=\"sliderhax.php\">sliderhax</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>This is the one returned by 3dsbrowserhax_auto.php for Old3DS web-browser when the browser version is supported.</td></tr>\n";
-$con.= "<tr><td>New3DS</td><td><a href=\"3dswebkithax_removewinframe.php\">3dswebkithax_removewinframe</a></td><td>All <=9.8.0-25(aka <=X.X.X-25)</td><td>>=9.9.0-26(aka >=X.X.X-26)</td><td>This is not used by the auto-select page at all(this exploit is also very unreliable).</td></tr>\n";
-$con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright.php\">browserhax_fright</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>This is the one returned by 3dsbrowserhax_auto.php for New3DS web-browser when the browser version is supported by this exploit.</td></tr>\n";
-$con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright_tx3g.php\">browserhax_fright_tx3g</a></td><td>All <=10.3.0-28(aka <=X.X.X-28)</td><td>None at the time of exploit release.</td><td>This is the one returned by 3dsbrowserhax_auto.php for New3DS web-browser when the browser version isn't supported by the above browserhax_fright.php.</td></tr>\n";
-$con.= "<tr><td>Old3DS</td><td><a href=\"spider28hax.php\">spider28hax</a></td><td>Only 10.3.0-28(aka X.X.X-28)</td><td>None at the time of exploit release.</td><td>This is the one returned by 3dsbrowserhax_auto.php for Old3DS web-browser when the browser version is not supported by sliderhax.</td></tr>\n";
+$con.= "<tr><td>Old3DS</td><td><a href=\"sliderhax.php\">sliderhax</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>Only when the browser version is supported.</td></tr>\n";
+$con.= "<tr><td>New3DS</td><td><a href=\"3dswebkithax_removewinframe.php\">3dswebkithax_removewinframe</a></td><td>All <=9.8.0-25(aka <=X.X.X-25)</td><td>>=9.9.0-26(aka >=X.X.X-26)</td><td>Not returned at all(this exploit is also very unreliable).</td></tr>\n";
+$con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright.php\">browserhax_fright</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>Only when the browser version is supported by this exploit.</td></tr>\n";
+$con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright_tx3g.php\">browserhax_fright_tx3g</a></td><td>All <=10.3.0-28(aka <=X.X.X-28)</td><td>None at the time of exploit release.</td><td>Only when the browser version isn't supported by the above browserhax_fright.</td></tr>\n";
+$con.= "<tr><td>Old3DS</td><td><a href=\"spider28hax.php\">spider28hax</a></td><td>Only 10.3.0-28(aka X.X.X-28)</td><td>None at the time of exploit release.</td><td>Only when the browser version isn't supported by sliderhax.</td></tr>\n";
 
 $con.= "</table>";
 
