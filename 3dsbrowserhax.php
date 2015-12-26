@@ -51,11 +51,27 @@ $con.= "</ol><br/>\n";
 
 if(file_exists("3dsbrowserhax_siteincpage.php"))require_once("3dsbrowserhax_siteincpage.php");
 
-$con.= "Old3DS: <a href=\"sliderhax.php\">sliderhax</a>, repo at <a href=\"https://github.com/yellows8/3ds_webkithax\">https://github.com/yellows8/3ds_webkithax</a>. This was fixed with system-version v10.2(or more specifically, system-version >=X.X.X-28). This is the one returned by 3dsbrowserhax_auto.php for Old3DS web-browser when the browser version is supported.<br/>\n";
-$con.= "New3DS: <a href=\"3dswebkithax_removewinframe.php\">3dswebkithax_removewinframe</a>, repo at <a href=\"https://github.com/yellows8/3ds_webkithax\">https://github.com/yellows8/3ds_webkithax</a>. This was fixed for New3DS with system-version v9.9(or more specifically, system-version >=X.X.X-26). This is not used by the auto-select page at all(this exploit is also very unreliable).<br/>\n";
-$con.= "New3DS: <a href=\"browserhax_fright.php\">browserhax_fright</a>, repo at <a href=\"https://github.com/yellows8/browserhax_fright\">https://github.com/yellows8/browserhax_fright</a>. This was fixed with system-version v10.2(or more specifically, system-version >=X.X.X-28). This is the one returned by 3dsbrowserhax_auto.php for New3DS web-browser when the browser version is supported by this exploit.<br/>\n";
-$con.= "New3DS: <a href=\"browserhax_fright_tx3g.php\">browserhax_fright_tx3g</a>, repo at <a href=\"https://github.com/yellows8/browserhax_fright\">https://github.com/yellows8/browserhax_fright</a>.  This is supported on all system-versions at the time of exploit release(<=10.3.0-28). This is the one returned by 3dsbrowserhax_auto.php for New3DS web-browser when the browser version isn't supported by the above browserhax_fright.php.<br/>\n";
-$con.= "Old3DS: <a href=\"spider28hax.php\">spider28hax</a>, repo at <a href=\"https://github.com/yellows8/3ds_webkithax\">https://github.com/yellows8/3ds_webkithax</a>. This is the one returned by 3dsbrowserhax_auto.php for Old3DS web-browser when the browser version is not supported by sliderhax(this isn't fixed yet as of 10.3.0-28/X.X.X-28).<br/>\n";
+$con.= "The repo for the Old3DS exploits and 3dswebkithax_removewinframe is located <a href=\"https://github.com/yellows8/3ds_webkithax\">here</a>. The repo for the New3DS exploits(minus 3dswebkithax_removewinframe) is located <a href=\"https://github.com/yellows8/browserhax_fright\">here</a>.<br/><br/>\n";
+
+$con.= "Due to the *hax payloads, the exploits hosted here are only usable on systems with system-version >=v9.0 with the system web-browser installed.<br/><br/>\n";
+
+$con.= "<table border=\"1\">\n";
+
+$con.= "<tr>
+  <th>System</th>
+  <th>Exploit</th>
+  <th>Supported system-versions</th>
+  <th>Fixed with system-version</th>
+  <th>Notes</th>
+</tr>\n";
+
+$con.= "<tr><td>Old3DS</td><td><a href=\"sliderhax.php\">sliderhax</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>This is the one returned by 3dsbrowserhax_auto.php for Old3DS web-browser when the browser version is supported.</td></tr>\n";
+$con.= "<tr><td>New3DS</td><td><a href=\"3dswebkithax_removewinframe.php\">3dswebkithax_removewinframe</a></td><td>All <=9.8.0-25(aka <=X.X.X-25)</td><td>>=9.9.0-26(aka >=X.X.X-26)</td><td>This is not used by the auto-select page at all(this exploit is also very unreliable).</td></tr>\n";
+$con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright.php\">browserhax_fright</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>This is the one returned by 3dsbrowserhax_auto.php for New3DS web-browser when the browser version is supported by this exploit.</td></tr>\n";
+$con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright_tx3g.php\">browserhax_fright_tx3g</a></td><td>All <=10.3.0-28(aka <=X.X.X-28)</td><td>None at the time of exploit release.</td><td>This is the one returned by 3dsbrowserhax_auto.php for New3DS web-browser when the browser version isn't supported by the above browserhax_fright.php.</td></tr>\n";
+$con.= "<tr><td>Old3DS</td><td><a href=\"spider28hax.php\">spider28hax</a></td><td>Only 10.3.0-28(aka X.X.X-28)</td><td>None at the time of exploit release.</td><td>This is the one returned by 3dsbrowserhax_auto.php for Old3DS web-browser when the browser version is not supported by sliderhax.</td></tr>\n";
+
+$con.= "</table>";
 
 echo $con;
 
