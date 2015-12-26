@@ -49,6 +49,8 @@ $con.= "<li>Exit the browser so that the current page automatically loads when t
 $con.= "<li>Enter the browser then trigger the haxx as described in the repos linked below(when they don't auto-trigger).</li>\n";
 $con.= "</ol><br/>\n";
 
+if(file_exists("3dsbrowserhax_siteincpage.php"))require_once("3dsbrowserhax_siteincpage.php");
+
 $con.= "Old3DS: <a href=\"sliderhax.php\">sliderhax</a>, repo at <a href=\"https://github.com/yellows8/3ds_webkithax\">https://github.com/yellows8/3ds_webkithax</a>. This was fixed with system-version v10.2(or more specifically, system-version >=X.X.X-28). This is the one returned by 3dsbrowserhax_auto.php for Old3DS web-browser when the browser version is supported.<br/>\n";
 $con.= "New3DS: <a href=\"3dswebkithax_removewinframe.php\">3dswebkithax_removewinframe</a>, repo at <a href=\"https://github.com/yellows8/3ds_webkithax\">https://github.com/yellows8/3ds_webkithax</a>. This was fixed for New3DS with system-version v9.9(or more specifically, system-version >=X.X.X-26). This is not used by the auto-select page at all(this exploit is also very unreliable).<br/>\n";
 $con.= "New3DS: <a href=\"browserhax_fright.php\">browserhax_fright</a>, repo at <a href=\"https://github.com/yellows8/browserhax_fright\">https://github.com/yellows8/browserhax_fright</a>. This was fixed with system-version v10.2(or more specifically, system-version >=X.X.X-28). This is the one returned by 3dsbrowserhax_auto.php for New3DS web-browser when the browser version is supported by this exploit.<br/>\n";
