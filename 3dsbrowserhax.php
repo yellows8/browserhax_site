@@ -42,6 +42,13 @@ $con.= "The following are system-web-browser exploits for Nintendo 3DS, the ones
 
 $con.= "Note that systems where the system was updated with a >=v9.9 gamecard sysupdate have a dummy browser installed, unless an online sysupdate was done afterwards. See <a href=\"http://3dbrew.org/wiki/Internet_Browser\">here</a> for details.<br/><br/>\n";
 
+$con.= "Before using any of the Old3DS browser exploits, you should do the following:<br/><ol>\n";
+$con.= "<li>Use the browser 'Initialize savedata' option.</li>\n";
+$con.= "<li>Enter the browser again so that savedata can be setup. Then goto directly to the exploit page, you can return to Home Menu for scanning the above QR-code for this if you prefer.</li>\n";
+$con.= "<li>Exit the browser so that the current page automatically loads when the browser gets launched again. At this point the only pages in the browser history should be the default 3ds-bookmarks page follwed by just the exploit page.</li>\n";
+$con.= "<li>Enter the browser then trigger the haxx as described in the repos linked below(when they don't auto-trigger).</li>\n";
+$con.= "</ol><br/>\n";
+
 $con.= "Old3DS: <a href=\"sliderhax.php\">sliderhax</a>, repo at <a href=\"https://github.com/yellows8/3ds_webkithax\">https://github.com/yellows8/3ds_webkithax</a>. This was fixed with system-version v10.2(or more specifically, system-version >=X.X.X-28). This is the one returned by 3dsbrowserhax_auto.php for Old3DS web-browser when the browser version is supported.<br/>\n";
 $con.= "New3DS: <a href=\"3dswebkithax_removewinframe.php\">3dswebkithax_removewinframe</a>, repo at <a href=\"https://github.com/yellows8/3ds_webkithax\">https://github.com/yellows8/3ds_webkithax</a>. This was fixed for New3DS with system-version v9.9(or more specifically, system-version >=X.X.X-26). This is not used by the auto-select page at all(this exploit is also very unreliable).<br/>\n";
 $con.= "New3DS: <a href=\"browserhax_fright.php\">browserhax_fright</a>, repo at <a href=\"https://github.com/yellows8/browserhax_fright\">https://github.com/yellows8/browserhax_fright</a>. This was fixed with system-version v10.2(or more specifically, system-version >=X.X.X-28). This is the one returned by 3dsbrowserhax_auto.php for New3DS web-browser when the browser version is supported by this exploit.<br/>\n";
