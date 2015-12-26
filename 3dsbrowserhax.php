@@ -45,7 +45,7 @@ $con.= "Note that systems where the system was updated with a >=v9.9 gamecard sy
 $con.= "Before using any of the Old3DS browser exploits, you should do the following:<br/><ol>\n";
 $con.= "<li>Use the browser 'Initialize savedata' option.</li>\n";
 $con.= "<li>Enter the browser again so that savedata can be setup. Then goto directly to the exploit page, you can return to Home Menu for scanning the above QR-code for this if you prefer.</li>\n";
-$con.= "<li>Exit the browser so that the current page automatically loads when the browser gets launched again. At this point the only pages in the browser history should be the default 3ds-bookmarks page follwed by just the exploit page.</li>\n";
+$con.= "<li>Exit the browser so that the current page automatically loads when the browser gets launched again. At this point the only pages in the browser history should be the default 3ds-bookmarks page followed by just the exploit page.</li>\n";
 $con.= "<li>Enter the browser then trigger the haxx as described in the repos linked below(when they don't auto-trigger).</li>\n";
 $con.= "</ol><br/>\n";
 
