@@ -66,7 +66,7 @@ $con.= "The repo for the Old3DS exploits and 3dswebkithax_removewinframe is loca
 
 $con.= "Due to the *hax payloads, the exploits hosted here are only usable on systems with system-version >=v9.0 with the system web-browser installed.<br/>Using the <a href=\"3dsbrowserhax_auto.php\">auto</a> page(such as with the above QR-code) instead of going to the exploit pages linked below manually, is <b>highly</b> recommended.<br/><br/>\n";
 
-$con.= "<b>Please note that Old3DS-browserhax is much more unstable with failing starting at the gray-screen, starting with 10.4.0-29(updated NATIVE_FIRM is part of this but it's not the only issue). Hence, as already said above installing other hax from here is highly recommended. See <a href=\"https://github.com/yellows8/3ds_browserhax_common\">here</a> regarding crashes/hangs/screen-colors.</b><br/><br/>\n";
+$con.= "<b>Please note that Old3DS-browserhax is more unstable with failing starting at the orange-screen, starting with 10.4.0-29(updated NATIVE_FIRM is part of this but it's not the only issue). Hence, as already said above installing other hax from here is highly recommended. See <a href=\"https://github.com/yellows8/3ds_browserhax_common\">here</a> regarding crashes/hangs/screen-colors.</b><br/><br/>\n";
 
 $con.= "<table border=\"1\">\n";
 
