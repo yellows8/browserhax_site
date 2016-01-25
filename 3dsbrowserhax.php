@@ -66,6 +66,8 @@ $con.= "The repo for the Old3DS exploits and 3dswebkithax_removewinframe is loca
 
 $con.= "Due to the *hax payloads, the exploits hosted here are only usable on systems with system-version >=v9.0 with the system web-browser installed.<br/>Using the <a href=\"3dsbrowserhax_auto.php\">auto</a> page(such as with the above QR-code) instead of going to the exploit pages linked below manually, is <b>highly</b> recommended.<br/><br/>\n";
 
+$con.= "<b>Please note that Old3DS-browserhax is much more unstable with failing starting at the gray-screen, starting with 10.4.0-29(updated NATIVE_FIRM is part of this but it's not the only issue). Hence, as already said above installing other hax from here is highly recommended.</b><br/><br/>\n";
+
 $con.= "<table border=\"1\">\n";
 
 $con.= "<tr>
@@ -80,7 +82,7 @@ $con.= "<tr><td>Old3DS</td><td><a href=\"sliderhax.php\">sliderhax</a></td><td>A
 $con.= "<tr><td>New3DS</td><td><a href=\"3dswebkithax_removewinframe.php\">3dswebkithax_removewinframe</a></td><td>All <=9.8.0-25(aka <=X.X.X-25)</td><td>>=9.9.0-26(aka >=X.X.X-26)</td><td>Not returned at all(this exploit is also very unreliable).</td></tr>\n";
 $con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright.php\">browserhax_fright</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>Only when the browser version is supported by this exploit.</td></tr>\n";
 $con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright_tx3g.php\">browserhax_fright_tx3g</a></td><td>All <=10.4.0-29(aka <=X.X.X-29)</td><td>None as of X.X.X-29.</td><td>Only when the browser version isn't supported by the above browserhax_fright.</td></tr>\n";
-$con.= "<tr><td>Old3DS</td><td><a href=\"spider28hax.php\">spider28hax</a></td><td>Only 10.3.0-28(aka X.X.X-28)</td><td>None at the time of exploit release.</td><td>Only when the browser version isn't supported by sliderhax.</td></tr>\n";
+$con.= "<tr><td>Old3DS</td><td><a href=\"spider28hax.php\">spider28hax</a></td><td>Only 10.3.0-28-10.4.0-29</td><td>None as of X.X.X-29.</td><td>Only when the browser version isn't supported by sliderhax.</td></tr>\n";
 
 $con.= "</table>";
 
