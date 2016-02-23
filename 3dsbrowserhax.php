@@ -81,8 +81,8 @@ $con.= "<tr>
 $con.= "<tr><td>Old3DS</td><td><a href=\"sliderhax.php\">sliderhax</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>Only when the browser version is supported.</td></tr>\n";
 $con.= "<tr><td>New3DS</td><td><a href=\"3dswebkithax_removewinframe.php\">3dswebkithax_removewinframe</a></td><td>All <=9.8.0-25(aka <=X.X.X-25)</td><td>>=9.9.0-26(aka >=X.X.X-26)</td><td>Not returned at all(this exploit is also very unreliable).</td></tr>\n";
 $con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright.php\">browserhax_fright</a></td><td>All <=10.1.0-27(aka <=X.X.X-27)</td><td>>=10.2.0-28(aka >=X.X.X-28)</td><td>Only when the browser version is supported by this exploit.</td></tr>\n";
-$con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright_tx3g.php\">browserhax_fright_tx3g</a></td><td>All <=10.5.0-30(aka <=X.X.X-30)</td><td>None as of X.X.X-30.</td><td>Only when the browser version isn't supported by the above browserhax_fright.</td></tr>\n";
-$con.= "<tr><td>Old3DS</td><td><a href=\"spider28hax.php\">spider28hax</a></td><td>Only 10.2.0-28-10.5.0-30</td><td>None as of X.X.X-30.</td><td>Only when the browser version isn't supported by sliderhax.</td></tr>\n";
+$con.= "<tr><td>New3DS</td><td><a href=\"browserhax_fright_tx3g.php\">browserhax_fright_tx3g</a></td><td>All <=10.5.0-30(aka <=X.X.X-30)</td><td>>=10.6.0-31(aka >=X.X.X-31)</td><td>Only when the browser version isn't supported by the above browserhax_fright.</td></tr>\n";
+$con.= "<tr><td>Old3DS</td><td><a href=\"spider28hax.php\">spider28hax</a></td><td>Only 10.2.0-28-10.5.0-30</td><td>>=10.6.0-31(aka >=X.X.X-31)</td><td>Only when the browser version isn't supported by sliderhax.</td></tr>\n";
 
 $con.= "</table>";
 
