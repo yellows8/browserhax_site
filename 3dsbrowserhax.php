@@ -47,9 +47,9 @@ if($_SERVER['SCRIPT_NAME'] == "/3dsbrowserhax_auto.php")
 
 $con = "<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>Nintendo 3DS web-browser exploits</title></head>\n<body>";
 
-$con.= "The following are system-web-browser exploits for Nintendo 3DS, the ones hosted here are for booting the *hax payloads(<a href=\"https://smealum.github.io/3ds/\">https://smealum.github.io/3ds/</a>). See the linked repos for usage details and supported browser versions, etc, including the common codebase: <a href=\"https://github.com/yellows8/3ds_browserhax_common\">https://github.com/yellows8/3ds_browserhax_common</a>. On a supported browser, you can go <a href=\"3dsbrowserhax_auto.php\">here</a>, which will automatically determine which exploit to return for your browser.<br/>\n  Once you boot into the payload successfully, you can then install exploit(s) from here(this is <b>highly</b> recommended): <a href=\"http://3dbrew.org/wiki/Homebrew_Exploits\">http://3dbrew.org/wiki/Homebrew_Exploits</a>. This highly recommended because of the browser-version-check implemented with v9.9, see <a href=\"http://3dbrew.org/wiki/Internet_Browser\">here</a> for details.<br/>\n<br/>\nThe following QR-code can be scanned by an Old3DS/New3DS for accessing the previously mentioned <a href=\"3dsbrowserhax_auto.php\">URL</a>: <br/>\n<img src=\"3dsbrowserhax_auto_qrcode.png\"><br/>\n<br/>\n";
+$con.= "The following are system-web-browser exploits for Nintendo 3DS, the ones hosted here are for booting the *hax payloads(<a href=\"https://smealum.github.io/3ds/\">https://smealum.github.io/3ds/</a>). See the linked repos for usage details and supported browser versions, etc, including the common codebase: <a href=\"https://github.com/yellows8/3ds_browserhax_common\">https://github.com/yellows8/3ds_browserhax_common</a>. On a supported browser, you can go <a href=\"3dsbrowserhax_auto.php\">here</a>, which will automatically determine which exploit to return for your browser.<br/>\n  Once you boot into the payload successfully, you can then install exploit(s) from here(this is <b>highly</b> recommended): <a href=\"https://3dbrew.org/wiki/Homebrew_Exploits\">https://3dbrew.org/wiki/Homebrew_Exploits</a>. This highly recommended because of the browser-version-check implemented with v9.9, see <a href=\"https://3dbrew.org/wiki/Internet_Browser\">here</a> for details.<br/>\n<br/>\nThe following QR-code can be scanned by an Old3DS/New3DS for accessing the previously mentioned <a href=\"3dsbrowserhax_auto.php\">URL</a>: <br/>\n<img src=\"3dsbrowserhax_auto_qrcode.png\"><br/>\n<br/>\n";
 
-$con.= "Note that systems where the system was updated with a >=v9.9 gamecard sysupdate have a dummy browser installed, unless an online sysupdate was done afterwards. See <a href=\"http://3dbrew.org/wiki/Internet_Browser\">here</a> for details.<br/><br/>\n";
+$con.= "Note that systems where the system was updated with a >=v9.9 gamecard sysupdate have a dummy browser installed, unless an online sysupdate was done afterwards. See <a href=\"https://3dbrew.org/wiki/Internet_Browser\">here</a> for details.<br/><br/>\n";
 
 $con.= "The <i>only</i> required SD-card setup is that you extract the homebrew <a href=\"https://smealum.github.io/3ds/\">starter-kit</a> on SD.<br/><br/>\n";
 
@@ -58,6 +58,14 @@ $con.= "<li>Use the browser 'Initialize savedata' option.</li>\n";
 $con.= "<li>Enter the browser again so that savedata can be setup. Then goto directly to the exploit page(this can be the auto <a href=\"3dsbrowserhax_auto.php\">page</a>), you can return to Home Menu for scanning the above QR-code for this if you prefer.</li>\n";
 $con.= "<li>Exit the browser so that the current page automatically loads when the browser gets launched again. At this point the only pages in the browser history should be the default 3ds-bookmarks page followed by just the exploit page.</li>\n";
 $con.= "<li>Enter the browser then trigger the haxx as described in the repos linked below(when they don't auto-trigger).</li>\n";
+$con.= "</ol><br/>\n";
+
+$con.= "<b>As of Feburary 24, 2016, the <a href=\"https://3dbrew.org/wiki/Internet_Browser\">browser-version-check</a> requires that the installed Old3DS browser be on >=v10.6. With New3DS, it only has to be on >=v10.2 currently. To bypass this requirement, you can do the following(if you want to know how this works see <a href=\"https://3dbrew.org/wiki/3DS_Userland_Flaws\">here</a>):</b><br/><ol>\n";
+
+$con.= "<li>Goto System Settings. Then change the datetime to January 1, 2000, 00:00.</li>\n";
+$con.= "<li>Use the browser 'Initialize savedata' option, before any page gets loaded triggering the browser-version message.</li>\n";
+$con.= "<li>Continue to use browserhax as normal.</li>\n";
+$con.= "<li>Note that you must not press the HOME button to return from the browser normally, otherwise you will have to reinitialize the savedata again. Once the datetime reaches January 2, you will have to repeat these steps if you want to continue using this bypass.</li>\n";
 $con.= "</ol><br/>\n";
 
 if(file_exists("3dsbrowserhax_siteincpage.php"))require_once("3dsbrowserhax_siteincpage.php");
