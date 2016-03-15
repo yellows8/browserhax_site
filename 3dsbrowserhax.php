@@ -60,7 +60,7 @@ $con.= "<li>Exit the browser so that the current page automatically loads when t
 $con.= "<li>Enter the browser then trigger the haxx as described in the repos linked below(when they don't auto-trigger).</li>\n";
 $con.= "</ol><br/>\n";
 
-$con.= "<b>As of February 24, 2016, the <a href=\"https://3dbrew.org/wiki/Internet_Browser\">browser-version-check</a> requires that the installed Old3DS browser be on >=v10.6. With New3DS, it only has to be on >=v10.2 currently. To bypass this requirement on Old3DS/New3DS, you can do the following(if you want to know how this works see <a href=\"https://3dbrew.org/wiki/3DS_Userland_Flaws\">here</a>):</b><br/><ol>\n";
+$con.= "<b>As of February 24, 2016, the <a href=\"https://3dbrew.org/wiki/Internet_Browser\">browser-version-check</a> requires that the installed Old3DS browser be on >=v10.6. With New3DS, it only has to be on >=v10.2 currently. To bypass this requirement on Old3DS/New3DS(this bypass is only usable prior to 10.7.0-32 since it's fixed with 10.7.0-32), you can do the following(if you want to know how this works see <a href=\"https://3dbrew.org/wiki/3DS_Userland_Flaws\">here</a>):</b><br/><ol>\n";
 
 $con.= "<li>Goto System Settings. Then change the datetime to January 1, 2000, 00:00.</li>\n";
 $con.= "<li>Use the browser 'Initialize savedata' option, before any page gets loaded triggering the browser-version message.</li>\n";
