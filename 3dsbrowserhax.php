@@ -79,7 +79,7 @@ $con.= "Due to the *hax payloads, the exploits hosted here are only usable on sy
 
 $con.= "<b>Please note that Old3DS-browserhax is much more unstable starting with 10.4.0-29. When it fails at an orange-screen(or afterwards) native code is already running, therefore there's nothing more you can do other than rebooting the system and trying again. Hence, as already said above installing other hax from here is highly recommended. See <a href=\"https://github.com/yellows8/3ds_browserhax_common\">here</a> regarding crashes/hangs/screen-colors.</b><br/><br/>\n";
 
-$con.= "The exploits marked 'obsolete' are no longer returned by the auto-page since better exploits support the same versions the obsolete ones did.<br/><br/>\n";
+$con.= "The exploits marked 'obsolete' are not returned by the auto-page since better exploits support the same versions the obsolete ones did.<br/><br/>\n";
 
 $con.= "<table border=\"1\">\n";
 
