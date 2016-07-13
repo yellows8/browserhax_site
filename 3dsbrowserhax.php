@@ -16,11 +16,7 @@ if($_SERVER['SCRIPT_NAME'] == "/3dsbrowserhax_auto.php")
 
 	if(strstr($ua, "Mozilla/5.0 (Nintendo 3DS; U; ; "))
 	{
-		if(strstr($ua, "1.7455") || strstr($ua, "1.7498") || strstr($ua, "1.7552") || strstr($ua, "1.7567") || strstr($ua, "1.7585"))
-		{
-			$page = "sliderhax.php";
-		}
-		else if(strstr($ua, "1.7538") || strstr($ua, "1.7610") || strstr($ua, "1.7616"))
+		if(strstr($ua, "1.7538") || strstr($ua, "1.7616"))
 		{
 			$page = "spider28hax.php";
 		}
