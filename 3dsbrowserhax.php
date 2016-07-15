@@ -77,7 +77,7 @@ if(file_exists("3dsbrowserhax_siteincpage.php"))require_once("3dsbrowserhax_site
 
 $con.= "Due to the *hax payloads, the exploits hosted here are only usable on systems with system-version >=v9.0 with the system web-browser installed.<br/><br/>Using the <a href=\"http://".$_SERVER['SERVER_NAME']."/3dsbrowserhax_auto.php\">auto</a> page(such as with the above QR-code) instead of going to the exploit pages linked below manually, is <b>highly</b> recommended.<br/><br/>\n";
 
-$con.= "<b>Please note that Old3DS-browserhax is much more unstable starting with 10.4.0-29. When it fails at an orange-screen(or afterwards) native code is already running, therefore there's nothing more you can do other than rebooting the system and trying again. Hence, as already said above installing other hax from here is highly recommended. See <a href=\"https://github.com/yellows8/3ds_browserhax_common\">here</a> regarding crashes/hangs/screen-colors.</b><br/><br/>\n";
+$con.= "<b>If any crash/hang ever occurs, you will just have to run the exploit again, with a hardware reboot if this occurs after the initial gray-screen color-fill. See <a href=\"https://github.com/yellows8/3ds_browserhax_common\">here</a> regarding crashes/hangs/screen-colors.</b><br/><br/>\n";
 
 $con.= "The exploits marked 'obsolete' are not returned by the auto-page since better exploits support the same versions the obsolete ones did.<br/><br/>\n";
 
