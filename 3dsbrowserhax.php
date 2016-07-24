@@ -48,7 +48,7 @@ if($_SERVER['SCRIPT_NAME'] == "/3dsbrowserhax_auto.php")
 	exit;
 }
 
-$con = "<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>Nintendo 3DS web-browser exploits</title></head>\n<body>";
+$con = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>Nintendo 3DS web-browser exploits</title></head>\n<body>";
 
 $con.= "The following are system-web-browser exploits for Nintendo 3DS, the ones hosted here are for booting the *hax <a href=\"https://smealum.github.io/3ds/\">payloads</a>. On a supported browser, you can go <a href=\"http://".$_SERVER['SERVER_NAME']."/3dsbrowserhax_auto.php\">here</a>, which will automatically determine which exploit to return for your browser.<br/>\n  Once you boot into the payload successfully, you can then install exploit(s) from <a href=\"https://www.3dbrew.org/wiki/Homebrew_Exploits\">here</a>(this is <b>highly</b> recommended). This highly recommended because of the browser-version-check implemented with v9.9, see <a href=\"https://www.3dbrew.org/wiki/Internet_Browser\">here</a> for details.<br/>\n<br/>\nThe following QR-code can be scanned by an Old3DS/New3DS from the Home Menu camera menu(if the QR-code menu option is available), for accessing the auto <a href=\"http://".$_SERVER['SERVER_NAME']."/3dsbrowserhax_auto.php\">page</a>: <br/>\n<img src=\"3dsbrowserhax_auto_qrcode.png\"><br/>\n<br/>\n";
 
@@ -101,7 +101,16 @@ $con.= "<tr><td>Old3DS</td><td><a href=\"http://".$_SERVER['SERVER_NAME']."/spid
 $con.= "<tr><td>Old3DS</td><td><a href=\"http://".$_SERVER['SERVER_NAME']."/spider31hax.php\">spider31hax</a></td><td>Only 10.6.0-31-11.0.0-33(aka X.X.X-31-X.X.X-33) and X.X.X-2 - X.X.X-27</td><td>None</td><td>Only when the browser version isn't supported by spider28hax.</td><td>Yes</td><td><a href=\"https://github.com/yellows8/3ds_webkithax\">Here</a></td></tr>\n";
 $con.= "<tr><td>New3DS</td><td><a href=\"http://".$_SERVER['SERVER_NAME']."/skater31hax.php\">skater31hax</a></td><td>All <=11.0.0-33(aka <=X.X.X-33)</td><td>None</td><td>Only when the browser version isn't supported by older exploit(s).</td><td>Yes</td><td><a href=\"https://github.com/yellows8/browserhax_fright\">Here</a></td></tr>\n";
 
-$con.= "</table>";
+$con.= "</table>\n";
+
+$con.= "<h2>Credits</h2>";
+
+$con.= "<ul>\n";
+$con.= "<li><i>Everyone</i> that originally found the WebKit testcases/etc which affect the 3DS browsers that the WebKit exploits here are based on, see <a href=\"https://github.com/yellows8/3ds_webkithax\">here</a>.</li>\n";
+$con.= "<li>Hence the repos linked above and the domain name: yellows8 for implementing the exploits, and mtheall for hosting the exploits.</li>\n";
+$con.= "</ul>\n";
+
+$con.= "</html>";
 
 echo $con;
 
